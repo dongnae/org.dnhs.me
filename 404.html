@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Organic | Not Found</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#250448">
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <style>
+        * {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav style="background-color: #250448;">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo navbar-margin" style="font-size: 1.4em;">Organic</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/intro/" class="auth">동아리 소개</a></li>
+                <li><a href="/members/" class="auth">동아리원</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img alt="background" src="/images/bg.png">
+            </div>
+            <div style="height: 80px"></div>
+            <a style="display: inline-block; margin-bottom: 10px;">
+                <span class="white-text name" style="font-weight: bold;">Organic</span>
+            </a>
+            <a><span class="white-text email" style="font-style: italic;">- 동래고등학교</span></a>
+        </div>
+    </li>
+    <li><a href="/intro/"><i class="material-icons">info</i>동아리 소개</a></li>
+    <li><a href="/members/"><i class="material-icons">people</i>동아리원</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li><a class="subheader">바로가기</a></li>
+    <li><a href="https://github.com/dongnae/" target="_blank"><i class="material-icons">link</i>Github</a>
+    </li>
+</ul>
+
+<div class="container">
+    <h2 class="main-name">Not Found</h2>
+    <p class="main-text">존재하지 않는 페이지입니다.</p>
+    <div style="display: flex; justify-content: left;">
+        <a href="javascript: history.go(-1);" style="color: #534bae; display: inline-flex; align-items: center; margin-right: 50px;">
+            <i style="display: inline-block; margin-left: 4px;" class="material-icons">arrow_back</i>이전 페이지로</a>
+        <a href="/" style="color: #534bae; display: inline-flex; align-items: center;">메인화면으로
+            <i style="display: inline-block; margin-left: 4px;" class="material-icons">arrow_forward</i></a>
+    </div>
+</div>
+
+<footer class="page-footer" style="padding: 0; background-color: #250448; margin: 0; position: absolute; bottom: 0; width: 100%;">
+    <div class="footer-copyright" style="font-size: 80%;">
+        <div class="container" style="text-align: center; color: white;">
+            <div style="font-size: 1.05em;">
+                © 2020 Organic, All Right Reserved | 오가닉
+            </div>
+            <div style="display: flex; justify-content: space-evenly; margin-top: 10px;">
+                <a style="color: rgba(255, 255, 255, 0.8);"
+                   href="https://github.com/dongane/"
+                   target="_blank">Github</a>
+                <a style="color: rgba(255, 255, 255, 0.8);"
+                   href="https://github.com/dongane/org.dnhs.me/"
+                   target="_blank">Source Code</a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, {});
+    });
+</script>
+
+</body>
+</html>

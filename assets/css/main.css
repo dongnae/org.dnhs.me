@@ -1,0 +1,32 @@
+@media (min-width: 993px) {
+    .navbar-margin {
+        margin-left: 25px;
+    }
+}
+
+*::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.main-name {
+    color: #1a237e;
+    display: inline-block;
+    width: 100%;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a237e;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 1.1em;
+}
+
+.blue-color {
+    color: #1a237e;
+}
+
+#nav-mobile > li:hover {
+    background-color: #00002a;
+}
